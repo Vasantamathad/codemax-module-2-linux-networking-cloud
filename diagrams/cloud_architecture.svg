@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="650" viewBox="0 0 1100 650">
+<rect width="1100" height="650" fill="#f6f8fb"/>
+<text x="550" y="55" text-anchor="middle" font-family="Arial" font-size="30" font-weight="bold" fill="#172033">Module 2 — Cloud Infrastructure Architecture</text>
+
+<rect x="90" y="130" width="240" height="120" rx="18" fill="#ffffff" stroke="#7b2cbf" stroke-width="3"/>
+<text x="210" y="175" text-anchor="middle" font-family="Arial" font-size="22" font-weight="bold">User Laptop</text>
+<text x="210" y="210" text-anchor="middle" font-family="Arial" font-size="17">SSH / Browser / curl</text>
+
+<rect x="430" y="100" width="560" height="400" rx="24" fill="#ffffff" stroke="#2b6cb0" stroke-width="3"/>
+<text x="710" y="140" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold">Cloud Network / VPC</text>
+
+<rect x="500" y="190" width="420" height="250" rx="20" fill="#eef6ff" stroke="#3182ce" stroke-width="2"/>
+<text x="710" y="225" text-anchor="middle" font-family="Arial" font-size="22" font-weight="bold">Ubuntu Linux VM</text>
+<text x="710" y="265" text-anchor="middle" font-family="Arial" font-size="17">Security Group + UFW</text>
+
+<rect x="555" y="300" width="145" height="80" rx="14" fill="#fff" stroke="#333" stroke-width="2"/>
+<text x="627" y="335" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold">SSH</text>
+<text x="627" y="360" text-anchor="middle" font-family="Arial" font-size="16">TCP 22</text>
+
+<rect x="720" y="300" width="145" height="80" rx="14" fill="#fff" stroke="#333" stroke-width="2"/>
+<text x="792" y="335" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold">Nginx</text>
+<text x="792" y="360" text-anchor="middle" font-family="Arial" font-size="16">TCP 80</text>
+
+<rect x="560" y="395" width="300" height="30" rx="8" fill="#dff6e4"/>
+<text x="710" y="417" text-anchor="middle" font-family="Arial" font-size="15">/var/www/html/index.html</text>
+
+<line x1="330" y1="190" x2="430" y2="190" stroke="#555" stroke-width="4"/>
+<polygon points="430,190 415,182 415,198" fill="#555"/>
+<text x="380" y="175" text-anchor="middle" font-family="Arial" font-size="15">Internet</text>
+
+<line x1="330" y1="215" x2="500" y2="340" stroke="#777" stroke-width="2" stroke-dasharray="8,6"/>
+<text x="390" y="290" text-anchor="middle" font-family="Arial" font-size="14">SSH :22</text>
+
+<line x1="330" y1="230" x2="720" y2="340" stroke="#777" stroke-width="2" stroke-dasharray="8,6"/>
+<text x="520" y="315" text-anchor="middle" font-family="Arial" font-size="14">HTTP :80</text>
+
+<text x="550" y="565" text-anchor="middle" font-family="Arial" font-size="17" fill="#3d4859">Flow: Laptop → Cloud Security Group → Linux VM → Nginx → Web Page</text>
+</svg>
